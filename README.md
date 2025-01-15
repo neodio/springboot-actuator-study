@@ -25,3 +25,21 @@ https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%E
 
 ### actuator 셧다운 엔드포인트
  - (POST) http://localhost:8080/actuator/shutdown
+
+### Local prometheus, grafana 실행
+- 실행방법
+  ```
+  $ cd docker-prometheus && docker-compose up -d
+  ```
+- 도커 종료방법
+  ```
+  $ cd docker-prometheus && docker-compose down -v
+  ```
+
+### prometheus
+local: http://localhost:9090
+![prometheus.png](image%2Fprometheus.png)
+
+### grafana
+local: http://localhost:3000
+![grafana.png](image%2Fgrafana.png)
